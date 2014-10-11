@@ -13,11 +13,11 @@ while(Serial.available() > 0) {
   x = Serial.read();
     if(x!=45){
       y=(y*10)+z*(x-48);
-      z=1;
+      
     }  
     else{
       z=-1;
-      x=0;
+      
      }
 }        // say what you got:
  motor.step(y);    

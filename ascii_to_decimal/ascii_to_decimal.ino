@@ -15,12 +15,12 @@ int z=1;
                  x = Serial.read();
                     if(x!=45){
                       y=(y*10)+z*(x-48);
-                      z=1;
+                      
  
                   }  
                     else{
                       z=-1;
-                      x=0;
+                      
   
                   }
 

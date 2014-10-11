@@ -8,8 +8,9 @@ Serial.begin(9600);
 }
 
 void loop() {
-int x=0;
+
   if (Serial.available()){
+    int x=0;
     x=Serial.read();// se supone que si le ingresas un numero negatrivo gira en sentido contrario
     motor.step(x);
 }
